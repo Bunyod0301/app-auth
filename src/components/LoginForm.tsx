@@ -2,8 +2,9 @@
 import Link from "next/link";
 import { useState } from "react";
 import { signIn } from "next-auth/react";
-import { sign } from "crypto";
 import { useRouter } from "next/navigation";
+
+
 function LoginForm() {
 
   const [email, setEmail] = useState("");
@@ -24,7 +25,7 @@ function LoginForm() {
         setError("Invalid Credentials");
         return;
       }
-      router.replace('dashboard')
+      router.replace('/dashboard')
     } catch(error) {
       console.log(error);
     }
