@@ -36,7 +36,7 @@ function RegisterForm() {
 
 
 
-      const res = await fetch('api/register', {
+      const res = await fetch('api/users', {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
